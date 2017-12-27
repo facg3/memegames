@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Meme Games</title>
   <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
 </head>
 <body>
   <button class = "playSound" onClick = "audio()" id = "pic">||</button>
@@ -18,9 +19,21 @@
     <input type="text" class="search-box" placeholder="Search" value="" />
     <input type="submit" value="" class="search-btn" onClick="getMeme()" />
   </div>
-  <script type="text/javascript" src="script.js">
+<div class = "game-container">
+</div>
 
-  </script>
+<div class="form">
+  <h3>Upload your own game</h3>
+    <form class="login-form">
+      <input placeholder="Game name"/>
+      <input placeholder="URL"/>
+      <div class="wrap">
+    <a href="#" class="button"><strong>Upload</strong></a>
+    </div>
+    </form>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
