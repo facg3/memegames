@@ -1,0 +1,14 @@
+
+
+<br><br><br>
+<img style="float:left;" src="https://i.imgur.com/EOXsVPW.gif">
+<h1 class="games">Meme Games</h1>
+<img style="float:right;" src="https://i.imgur.com/EOXsVPW.gif">
+<br><br><br>
+<div class="search">
+  <input type="text" class="search-box" placeholder="Search" value="" />
+  <input type="submit" value="" class="search-btn" onClick="getMeme()" />
+</div>
+{{#each url}}
+<object width="650" height="500" data={{{this.url}}}></object>
+{{/each}}
