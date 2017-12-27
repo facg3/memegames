@@ -1,0 +1,28 @@
+{
+  "name": "memegames",
+  "version": "1.0.0",
+  "description": "it's not enough to view memes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facg3/memegames.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facg3/memegames/issues"
+  },
+  "homepage": "https://github.com/facg3/memegames#readme",
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0"
+  },
+  "dependencies": {
+    "env2": "^2.2.0",
+    "pg": "^7.4.0"
+  }
+}
