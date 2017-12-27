@@ -1,2 +1,2 @@
 # memegames
-it's not enough to view memes 
+it's not enough to view memes
