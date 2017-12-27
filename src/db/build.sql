@@ -10,10 +10,8 @@ CREATE TABLE games (
 
 INSERT INTO games (name, url) VALUES
 ('trollface', 'https://f3.silvergames.com/trollface-quest-silvergames.swfg'),
-('trollface 2', 'https://f3.silvergames.com/trollface-quest-2-silvergames.swf'),
+('trollface 2', 'https://f3.silvergames.com/trollface-quest-2-silvergames.swf');
 
 
 
 COMMIT;
-
-
