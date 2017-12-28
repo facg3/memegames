@@ -2,7 +2,6 @@ const dbConnection = require('./db_connection');
 
 
 const getGame = (name, cb) => {
-  console.log(name);
   const sql = {
     text: 'select url from games where name LIKE $1;',
     values: [`%${name}%`],

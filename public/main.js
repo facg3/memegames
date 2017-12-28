@@ -6,18 +6,18 @@ function getGame() {
   let response;
   xhr.onreadystatechange = function () {
     if (xhr.status === 200 && xhr.readyState == 4) {
-      response = JSON.parse(xhr.responseText);
+      response = xhr.responseText;
+      const game = document.createElement('object');
+      game.data = response;
+      game.width = 650;
+      game.height = 500;
+      const cont = document.getElementsByClassName('game')[0];
+      cont.appendChild(game);
     } else {
       console.log(`error${xhr.responseType}`);
     }
-
-    const game = document.createElement('object');
-    game.data = response[0];
-    game.width = 650;
-    game.height = 500;
-    const cont = document.getElementsByClassName('games')[0];
-    cont.appendChild(game);
   };
   xhr.open('POST', url);
-  xhr.send(name);
+  xhr.setRequestHeader('Content-Type', 'application/json')
+  xhr.send(JSON.stringify({name}));
 }
