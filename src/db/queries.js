@@ -20,4 +20,21 @@ const recentGame = (cb) => {
     cb(null, res.rows);
   });
 };
-module.exports = { getGame, recentGame };
+
+
+const addGame = (name, url, cb) => {
+  const sql = {
+    text: 'INSERT INTO games (name, url) VALUES ($1, $2)',
+    values: [name, url]
+  };
+
+  dbConnection.query(sql, (err, res) => {
+    if (err) cb(err);
+    cb(null, res.rows);
+  });
+};
+module.exports = {
+  getGame,
+  addGame,
+  recentGame
+};
