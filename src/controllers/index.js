@@ -1,10 +1,10 @@
-const getGameQuery = require('../db/getGame');
-const getGame = (req, res) => {
-  getGameQuery((err, data) => {
-    if (err) {
-      console.log(err);
-    } else {
-      res.render()
-    }
-  })
-}
+const express = require('express');
+
+const router = express.Router();
+
+const home = require('./home');
+const search = require('./search');
+
+router.post('/getGame', search);
+router.get('/', home.get);
+module.exports = router;
