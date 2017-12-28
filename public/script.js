@@ -7,69 +7,18 @@ function audio(){
   pic.textContent = document.getElementById('background_audio').muted?"►":"||"
 }
 
+window.onload = function(){
+  if ((window.location.href).includes("true")){
+    window.location.search = "";
+    alert("Game added to our database. Thanks, mate!");
+  }
+  else if ((window.location.href).includes("false")){
+    window.location.search = "";
+    alert("THE URL YOU ENTERED IS INVALID");
+  }
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function upload(){
-//   var name = document.getElementsByClassName("gname")[0].value;
-//   var url = document.getElementsByClassName("gurl")[0].value;
-//   var arr = url.split(".")
-//   var errBox = document.getElementsByClassName("error")[0];
-//   if(name.trim() == "" || url.trim() == ""){
-//     errBox.textContent = "";
-//     var wrongInput = document.createElement("h4");
-//     wrongInput.textContent = "PLEASE FILL IN THE REQUIRED FIELDS";
-//     errBox.appendChild(wrongInput);
-//   }
-//   else{
-//   if (arr[arr.length-1] != "swf"){
-//     errBox.textContent = "";
-//     var wrongURL = document.createElement("h4");
-//     wrongURL.textContent = "INVALID URL";
-//     errBox.appendChild(wrongURL);
-//   }
-//   else {
-//
-//
-//
-//     //All our code goes here
-//
-//
-//
-//
-//
-//
-//
-//
-//   }
-// }
-// }
+function direct(){
+  window.location.pathname = "/"
+}

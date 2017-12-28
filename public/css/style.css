@@ -202,8 +202,80 @@ body {
 	text-align: center;
 }
 
-.sub {
-  color: green;
-
-
+a {
+	-webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	display: block;
+	max-width: 100%;
+	text-decoration: none;
+	border-radius: 10px;
+	padding: 20px 30px;
+  background: rgb(34,139,34);
 }
+
+a.button {
+	color: rgba(255, 255, 255, 0.85);
+	box-shadow: rgba(124,252,0, 0.4) 0 0px 0px 2px inset;
+}
+
+a.button:hover {
+	color: rgba(255, 255, 255, 0.85);
+	box-shadow: rgba(124,252,0, 0.7) 0 0px 0px 40px inset;
+}
+
+.punch {
+  background: #4162a8;
+  border-top: 1px solid #38538c;
+  border-right: 1px solid #1f2d4d;
+  border-bottom: 1px solid #151e33;
+  border-left: 1px solid #1f2d4d;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+  box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+  color: #fff;
+  font: bold 20px/1 "helvetica neue", helvetica, arial, sans-serif;
+  margin-bottom: 10px;
+  padding: 10px 0 12px 0;
+  text-align: center;
+  text-shadow: 0 -1px 1px #1e2d4d;
+  width: 150px;
+  -webkit-background-clip: padding-box; }
+  .punch:hover {
+    -webkit-box-shadow: inset 0 0 20px 1px #87adff, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+    box-shadow: inset 0 0 20px 1px #87adff, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+    cursor: pointer; }
+  .punch:active {
+    -webkit-box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
+    box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 2px 0 #1f3053, 0 4px 3px 0 #111111;
+     }
+
+
+     .enjoy-css {
+       float:left;
+       -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+       box-sizing: content-box;
+       width: 160px;
+       cursor: pointer;
+       padding: 9px 20px;
+       overflow: hidden;
+       border: 1px solid;
+       font: normal 19px/1 "Acme", Helvetica, sans-serif;
+       color: rgba(0,0,0,1);
+       text-align: center;
+       -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+       background: #ffffff;
+       -webkit-box-shadow: 3px 3px 0 0 rgba(0,0,0,0.8) ;
+       box-shadow: 3px 3px 0 0 rgba(0,0,0,0.8) ;
+       text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+     }
+
+     .enjoy-css:active {
+       margin: 3px 0 0 3px;
+       -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.8) ;
+       box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.8) ;
+     }
