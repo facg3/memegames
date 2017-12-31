@@ -4,11 +4,11 @@
 <div class="form">
   <h3>Upload your own game</h3>
   <form class="login-form" method="POST" action="/addGame">
-    <input class="gname" name="name" placeholder="Game name" required/>
-    <input class="gurl" name = "url" placeholder="URL"
-    pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)" required  />
+    <label><input class="gname" name="name" placeholder="Game name" required/></label>
+    <label><input class="gurl" name = "url" placeholder="URL"
+    pattern="https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)" required  /></label>
     <div class="wrap"><br>
-      <button type="submit" name="submit" class = "punch">Upload</button>
+      <label><button type="submit" name="submit" class = "punch" name = "upload">Upload</button></label>
     </div>
     <div class="error" style="color:red;"></div>
   </form>
